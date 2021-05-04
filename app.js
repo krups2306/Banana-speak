@@ -1,9 +1,37 @@
-var btnTranslate = document.querySelector("#btn-translate");
-var textInput = document.querySelector("#txt-input");
+var btnTranslate = document.querySelector("#btn-translate");  //button
+var textInput = document.querySelector("#txt-input");  //input
+var outputDiv = document.querySelector("#output");   //output
 
-console.log(textInput)
+var serverURL = "https://api.funtranslations.com/translate/minion.json"   //translation url
 
-btnTranslate.addEventListener("click", function clickEventHandler(){
-    console.log("clicked..!");
-    console.log("input", textInput.value);
-})
+
+
+function getTranslationURL(text){
+    return serverURL + "?" + "text" + text
+}
+
+
+
+// defining error handler
+function errorHandler(error) {
+    console.log("Oops, an error occured", error);
+    alert("Something is wrong with the server! Please try again after a while")
+}
+
+
+function clickHandler() {
+     
+    var inputText = textInput.nodeValue; //for taking input
+
+    //calling server for processing
+    fetch(getTranslationURL(inputText))
+        .then(response => response.json())
+        .then(json => {
+            var translatedText = json.contents.translated;
+            outputDiv.inputText = translatedText;
+        }) 
+        .catch(errorHandler)
+};
+
+
+btnTranslate.addEventListener("click", clickHandler)
