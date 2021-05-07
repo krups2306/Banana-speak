@@ -25,10 +25,21 @@
             font-weight: bold;
         }
 
+        #btn-translate {
+            background-color: blue;
+            margin: 0;
+            position: absolute;
+            padding-top: 0.8rem;
+            padding-bottom: 0.8rem;
+            left: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
         #about {
             background-color: rgb(238, 234, 18);
             
-            padding-top: 1.5rem;
+            padding-top: 1rem;
             padding-bottom: 1.5rem;
             padding-right: 4rem;
             padding-left: 4rem;
@@ -40,20 +51,28 @@
         }
 
         #trans {
-            background-color: violet;
+            background-image: url(minion.jpg);
+            background-size: cover;
+            background-position: top center;
+            position: relative;
+            z-index: 1;
             height: 52vh;
-            justify-content: space-evenly;
+            justify-content: center;
+            padding-top: 1.2rem;
+            background-color: rgba(31, 30, 30, 0.4);
         }
 
         textarea {
             width: 90%;
             height: 10vh;
             display: block;
+            justify-content: center;
             margin: 1rem;
+            filter: blur(100%);
         }
 
         #output {
-            border: 1px solid black;
+            border: 2px solid black;
             height: 10vh;
             width: 90%;
             margin: 1rem;
@@ -67,9 +86,10 @@
     </div>
 
     <div class="trans" id="trans">
-       <textarea id="txt-input" placeholder="Put your sentence in English here and we will convert it to the minion language">
-
-       </textarea>
+        <textarea
+        id="txt-input"
+        placeholder="Enter your text here to translate it in the minion language...!"></textarea>
+      
        <button id="btn-translate">Translate to Minion_Lingu</button>
 
        <div style="font-size: large;">The translation is here 👇</div>
