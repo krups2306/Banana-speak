@@ -15,11 +15,10 @@
         #title {
             background-color: rgb(238, 234, 18);
             
-            margin: auto;
+            margin: 0;
             padding-top: 1.5rem;
             padding-bottom: 1.5rem;
-            padding-right: 1.5rem;
-            padding-left: 1.5rem;
+            
             text-align: center;
             text-transform: uppercase;
             font-weight: bold;
@@ -31,6 +30,7 @@
             position: absolute;
             padding-top: 0.8rem;
             padding-bottom: 0.8rem;
+            margin-top: 3.5rem;
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -62,20 +62,28 @@
             background-color: rgba(31, 30, 30, 0.4);
         }
 
+        #trans-text {
+            font-size: larger;
+            font-weight: bold;
+        }
+
         textarea {
-            width: 90%;
-            height: 10vh;
-            display: block;
-            justify-content: center;
-            margin: 1rem;
+           width: 80%;
+           height: 10vh;
+            
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 3rem;
             filter: blur(100%);
         }
 
         #output {
+            background-color: white;
             border: 2px solid black;
             height: 10vh;
             width: 90%;
-            margin: 1rem;
+            margin-top: 5rem;
+            
         }
     </style>
 </head>
@@ -92,7 +100,7 @@
       
        <button id="btn-translate">Translate to Minion_Lingu</button>
 
-       <div style="font-size: large;">The translation is here 👇</div>
+       <div id="trans-text">The translation is here 👇</div>
     <div id="output"></div>
 
     </div>
