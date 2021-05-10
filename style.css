@@ -7,8 +7,8 @@
         #title {
             background-color: #f9f9f9;
             background-image: linear-gradient(315deg, #df6666 0%, #02a388 74%);
-            padding-top: 1.5rem;
-            padding-bottom: 1.5rem;
+            padding-top: 1.2rem;
+            padding-bottom: 1.2rem;
             
             text-align: center;
             text-transform: uppercase;
@@ -22,9 +22,9 @@
             font-weight: bold;
             border: 2px solid black;
             position: absolute;
-            padding-top: 0.8rem;
-            padding-bottom: 0.8rem;
-            margin-top: 3.5rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-top: 11rem;
             left: 50%;
             -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -34,8 +34,8 @@
             background-color: #f9f9f9;
             background-image: linear-gradient(315deg, #df6666 0%, #02a388 74%);
             font-weight: bold;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
             padding-right: 5rem;
             padding-left: 5rem;
             text-align: center;
@@ -48,8 +48,7 @@
             /* background-image: linear-gradient(to right, rgb(235, 76, 187) , rgb(238, 238, 101)); */
             background-color: #f9ea8f;
             background-image: linear-gradient(315deg, #e9b91b 40%, #f03473 54%);
-            background-size: cover;
-            background-position: top center;
+            
             height: 52vh;
             padding-top: 1.2rem;
             background-color: rgba(31, 30, 30, 0.4);
@@ -64,7 +63,7 @@
         }
 
         textarea {
-           width: 80%;
+           width: 78%;
            height: 10vh;
            border: 2px solid black;
            margin-right: 10%;
@@ -77,7 +76,7 @@
             background-color: white;
             border: 2px solid black;
             height: 10vh;
-            width: 80%;
+            width: 78%;
             margin-left: 10%;
             margin-right: 10%;
             
