@@ -5,7 +5,8 @@
             margin: 0rem;
         }
         #title {
-            background-color: rgb(238, 234, 18);
+            background-color: #f9f9f9;
+            background-image: linear-gradient(315deg, #df6666 0%, #02a388 74%);
             padding-top: 1.5rem;
             padding-bottom: 1.5rem;
             
@@ -15,7 +16,8 @@
         }
 
         #btn-translate {
-            background-color: rgb(238, 234, 18);
+            background-color: #f9f9f9;
+            background-image: linear-gradient(315deg, #df6666 0%, #02a388 74%);
             font-family: 'New Tegomin', serif;
             font-weight: bold;
             border: 2px solid black;
@@ -29,7 +31,8 @@
         }
 
         #about {
-            background-color: rgb(238, 234, 18);
+            background-color: #f9f9f9;
+            background-image: linear-gradient(315deg, #df6666 0%, #02a388 74%);
             font-weight: bold;
             padding-top: 1rem;
             padding-bottom: 1rem;
@@ -42,7 +45,9 @@
         }
 
         #trans {
-            background-image: url(minion.jpg);
+            /* background-image: linear-gradient(to right, rgb(235, 76, 187) , rgb(238, 238, 101)); */
+            background-color: #f9ea8f;
+            background-image: linear-gradient(315deg, #e9b91b 40%, #f03473 54%);
             background-size: cover;
             background-position: top center;
             height: 52vh;
@@ -55,6 +60,7 @@
             font-weight: bold;
             margin-top: 7rem;
             text-align: center;
+            
         }
 
         textarea {
